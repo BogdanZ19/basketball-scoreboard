@@ -1,29 +1,33 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <div>
-                <h3>HOME</h3>
-                <p id="home-score"></p>
-                <div class="buttons">
-                    <button id="h-btn1" onclick="add(this)">+1</button>
-                    <button id="h-btn2" onclick="add(this)">+2</button>
-                    <button id="h-btn3" onclick="add(this)">+3</button>
-                </div>
-            </div>
-            <div>
-                <h3>AWAY</h3>
-                <p id="guest-score"></p>
-                <div class="buttons">
-                    <button id="g-btn1" onclick="add(this)">+1</button>
-                    <button id="g-btn2" onclick="add(this)">+2</button>
-                    <button id="g-btn3" onclick="add(this)">+3</button>
-                </div>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="display">
+            <h3>HOME</h3>
+            <p id="home-score"></p>
+            <div class="buttons">
+                <button id="h-btn1" onclick="add(this)">+1</button>
+                <button id="h-btn2" onclick="add(this)">+2</button>
+                <button id="h-btn3" onclick="add(this)">+3</button>
             </div>
         </div>
-        <script src="index.js"></script>
-    </body>
+        <div class="display">
+            <h3>AWAY</h3>
+            <p id="guest-score"></p>
+            <div class="buttons">
+                <button id="g-btn1" onclick="add(this)">+1</button>
+                <button id="g-btn2" onclick="add(this)">+2</button>
+                <button id="g-btn3" onclick="add(this)">+3</button>
+            </div>
+        </div>
+    </div>
+    <button id="reset-btn" onclick="resetScore()">RESET</button>
+    <script src="index.js"></script>
+</body>
+
 </html>

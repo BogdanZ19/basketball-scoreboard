@@ -19,3 +19,8 @@ function add(btn) {
     console.log(num)
     document.getElementById(team).textContent = score
 }
+
+function resetScore() {
+    document.getElementById("home-score").textContent = 0
+    document.getElementById("guest-score").textContent = 0
+}
